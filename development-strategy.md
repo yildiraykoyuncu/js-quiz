@@ -14,7 +14,7 @@ This is a simple website in which users can check their JS knowledge by taking a
 
 ## WIREFRAME
 
-![wireframe](\img\wireframe.JPG)
+![wireframe](./img/wireframe.JPG)
 
 ## 1.User Story: Welcome Message
 
