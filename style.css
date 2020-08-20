@@ -19,6 +19,7 @@ body {
     border: 1px solid black;
     padding: 20px;
     border-radius: 5px;
+    transition: all ease-in-out 0.3s;
 }
 
 .content-container {
@@ -33,6 +34,7 @@ body {
 }
 
 .btn {
+    margin-top: auto;
     border: none;
     border-radius: 5px;
     width: 100px;
@@ -40,8 +42,11 @@ body {
     color: white;
 }
 
-#start {
-    margin-top: auto;
+button#start {
+    background-color: rgb(20, 200, 100);
+}
+
+button#confirm {
     background-color: rgb(20, 200, 100);
 }
 
