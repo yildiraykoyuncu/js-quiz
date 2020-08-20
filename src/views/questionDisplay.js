@@ -28,10 +28,10 @@ const questionDisplay = (obj) => {
     <input type="radio" name="answer" value="0" id="answer_0">
     <label for="answer_0">${obj.answers[0]}</label><br>
 
-    <input type="radio" name="answer" value="0" id="answer_1">
+    <input type="radio" name="answer" value="1" id="answer_1">
     <label for="answer_0">${obj.answers[1]}</label><br>
 
-    <input type="radio" name="answer" value="0" id="answer_2">
+    <input type="radio" name="answer" value="2" id="answer_2">
     <label for="answer_0">${obj.answers[2]}</label>
     </div>
 

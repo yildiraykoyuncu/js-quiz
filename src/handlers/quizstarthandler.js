@@ -3,7 +3,6 @@
 console.log('--- loading handler: _');
 
 const quizStartHandler = (event) => {
-    console.log('hello')
 
     // read from data
     const questionIndex = state.game.currentQuestion;
