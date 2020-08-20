@@ -4,6 +4,18 @@ console.log('--- loading handler: _');
 
 const quizStartHandler = (event) => {
     console.log('hello')
+
+    // read from data
+    const questionIndex = state.game.currentQuestion;
+    const question = state.questions[questionIndex];
+
+    //Create HTML
+
+    const html = questionDisplay(question)
+        //Render HTML to DOM
+
+    document.getElementById('interface').innerHTML = html
+    document.getElementById('interface').classList.add('container')
 };
 
 /* handlers define user interactions
