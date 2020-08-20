@@ -2,8 +2,8 @@
 
 console.log('--- loading handler: _');
 
-const _ = (event) => {
-
+const quizStartHandler = (event) => {
+    console.log('hello')
 };
 
 /* handlers define user interactions
