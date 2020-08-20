@@ -35,8 +35,9 @@ const questionDisplay = (obj) => {
     <label for="answer_0">${obj.answers[2]}</label>
     </div>
 
-    <div class="interaction">
-    
+    <div id="interaction" class="interaction">
+
+    <h2 id="result"></h2>
     <button id="confirm" class="btn">Confirm!</button>
 
     </div>
