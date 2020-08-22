@@ -11,7 +11,7 @@
 
 */
 
-console.log('--- loading view: _');
+console.log('--- loading view: questionDisplay');
 
 // either expect or assert, up to you
 const expect = chai.expect;
@@ -39,7 +39,9 @@ const questionDisplay = (obj) => {
 
     <h2 id="result"></h2>
     <button id="confirm" class="btn">Confirm!</button>
-
+    <button id="next-question" class="btn">Next</button>
+    <button id="previous-question" class="btn">Previous</button><br>
+    
     </div>
     
     `
