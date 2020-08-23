@@ -12,11 +12,11 @@ const state = {
         // how many questions has the user answered?
         //  you can calculate this value by iterating through the questions
         //  is selected === -1?
-        answered: 0,
+        answered: 3,
         // how many correct answers has the user submitted?
         //  you can calculate this value by iterating through the questions
         //  is selected === correct?
-        correct: 0,
+        correct: 2,
         // should the correct answer be indicated when a user is wrong?
         //  a possible user setting, this could be toggled in the UI
         showCorrectAnswers: false,

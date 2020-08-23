@@ -18,20 +18,25 @@
     <script src='./src/data.js'></script>
     <script src='./src/log.js'></script>
     <script src='./src/init.js'></script>
-
+    <script src="./src/views/quit-message-display.js"></script>
     <!-- load logic files -->
     <script src="./src/views/questionDisplay.js"></script>
     <script src="./src/logic/check-first-last-question.js"></script>
+
     <!-- load handlers -->
 
     <script src="./src/handlers/quizstarthandler.js"></script>
     <script src="./src/handlers/answerHandler.js"></script>
+    
 
     <script src="./src/handlers/next-question-handler.js"></script>
     <script src="./src/handlers/previous-question-handler.js"></script>
  
 
 
+
+   <script src="./src/handlers/quit-handler.js"></script>
+   <script src="./src/handlers/restart-handler.js"></script>
 </head>
 
 <body>
@@ -67,6 +72,9 @@
     <script src="./src/listeners/previous-question-listener.js"></script>
 
 
+
+    <script src="./src/listeners/quit-listener.js"></script>
+    <script src="./src/listeners/restart-listener.js"></script>
     <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
     <script src='./lib/review-buttons.js'></script>

@@ -246,7 +246,7 @@ __As a user I want to be able to quit from the quiz whenever I want and see my r
 ### REPO
 
 - This user story is developed on the branch `quit`.
-- This branch is merged to the `master` branch after comlition.
+- This branch is merged to the `master` branch after completion.
 
 ### JS
 
