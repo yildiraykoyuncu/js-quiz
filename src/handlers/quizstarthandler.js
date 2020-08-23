@@ -15,6 +15,15 @@ const quizStartHandler = (event) => {
 
     document.getElementById('interface').innerHTML = html
     document.getElementById('interface').classList.add('container')
+
+    //create new object to be added to stateLog
+    const startLog = {
+      action: 'start'
+    };
+    // add log entry to stateLog
+    //  it will be updated by reference!
+    stateLog.push(startLog);
+    console.log(stateLog);
 };
 
 /* handlers define user interactions
