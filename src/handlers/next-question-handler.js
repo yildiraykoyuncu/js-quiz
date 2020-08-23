@@ -3,7 +3,7 @@
 console.log('--- loading handler: next-question-handler');
 
 const nextQuestionHandler = (event) => {
-    debugger;
+   // debugger;
     
     if (event.target.id !== 'next-question') return;
     
@@ -20,6 +20,18 @@ const nextQuestionHandler = (event) => {
         //Render HTML to DOM
 
     document.getElementById('interface').innerHTML = html
+
+    //create new object to be added to stateLog
+    const nextLog = {
+        action: 'next',
+        event: event.type,
+        'current question': questionIndex,
+        state:state
+        };
+      // add log entry to stateLog
+      
+      stateLog.push(nextLog);
+      console.log(stateLog);
 
     // check if current question is 0 then not to display prev button or last question so not to show next button
 
