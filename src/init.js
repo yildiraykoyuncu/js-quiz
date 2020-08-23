@@ -5,9 +5,9 @@ window.onload = () => {
 
 
   // log the initial state
-  log.push({
+  stateLog.push({
     state: deepClone(state)
   });
   // this log will always
-  console.log(log);
+  console.log(stateLog);
 };
