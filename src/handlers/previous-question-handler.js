@@ -3,7 +3,7 @@
 console.log('--- loading handler: previous-question-handler');
 
 const previousQuestionHandler = (event) => {
-    debugger;
+   // debugger;
 
     if (event.target.id !== 'previous-question') return;
     
@@ -19,7 +19,19 @@ const previousQuestionHandler = (event) => {
     const html = questionDisplay(question)
         //Render HTML to DOM
 
-    document.getElementById('interface').innerHTML = html
+    document.getElementById('interface').innerHTML = html;
+
+    //create new object to be added to stateLog
+    const previousLog = {
+        action: 'previous',
+        event: event.type,
+        'current question': questionIndex,
+        state:state
+        };
+      // add log entry to stateLog
+    
+      stateLog.push(previousLog);
+      console.log(stateLog);
 
     // check if current question is 0 then not to display prev button or last question so not to show next button
     

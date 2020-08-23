@@ -1,1 +1,1 @@
-const log = [];
+const stateLog = [];
