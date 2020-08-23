@@ -39,9 +39,15 @@ const questionDisplay = (obj) => {
 
     <h2 id="result"></h2>
     <button id="confirm" class="btn">Confirm!</button>
+
+
+
+    <button id="quit" class="btn">Quit</button>
+
     <button id="next-question" class="btn">Next</button>
     <button id="previous-question" class="btn">Previous</button><br>
     
+
     </div>
     
     `
