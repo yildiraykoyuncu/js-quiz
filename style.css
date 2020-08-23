@@ -35,11 +35,13 @@ body {
 
 .btn {
     margin-top: auto;
+    margin-bottom: 10px;
     border: none;
     border-radius: 5px;
     width: 100px;
     height: 30px;
     color: white;
+    background-color: rgb(20, 200, 100);
 }
 
 button#start {

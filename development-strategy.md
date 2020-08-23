@@ -214,7 +214,7 @@ __As user I want to be able to jump to next question and return to previous one.
 ### REPO
 
 - This user story is developed on the branch `switch-questions`.
-- This branch is merged to the `master` branch after conpletion.
+- This branch is merged to the `master` branch after completion.
 
 ### JS
 
