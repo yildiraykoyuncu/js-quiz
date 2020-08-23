@@ -27,7 +27,9 @@ const quizStartHandler = (event) => {
 
     //create new object to be added to stateLog
     const startLog = {
-      action: 'start'
+      action: 'start',
+      event: event,
+      state:state
     };
     // add log entry to stateLog
     //  it will be updated by reference!
