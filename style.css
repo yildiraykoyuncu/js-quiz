@@ -72,4 +72,16 @@ h2.false {
     margin-bottom: auto;
     color: red;
 }
+section#cheat-display{
+    display: flex;
+justify-content: center;   
+align-items: center;
+
+}
+div#cheat {
+display: flex;
+justify-content: center;   
+align-items: center;
+color: green; 
+}
 

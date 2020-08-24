@@ -17,6 +17,7 @@ const quitHandler = (event) => {
     document.getElementById('interface').classList.add('container');
 };
 
+
 /* handlers define user interactions
 
   they read user input

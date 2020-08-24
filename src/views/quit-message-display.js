@@ -31,6 +31,9 @@ return `<section id="quit">
 <div class="user-interaction">
 <button id="restart" class="btn">Restart</button>
 
+
+
+
 </div>
 </section>
 `
