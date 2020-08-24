@@ -3,10 +3,10 @@
 console.log('--- loading handler: previous-question-handler');
 
 const previousQuestionHandler = (event) => {
-   // debugger;
+
 
     if (event.target.id !== 'previous-question') return;
-    
+
     // update current question index
     state.game.currentQuestion--;
 
@@ -26,20 +26,20 @@ const previousQuestionHandler = (event) => {
         action: 'previous',
         event: event.type,
         'current question': questionIndex,
-        state:state
-        };
-      // add log entry to stateLog
-    
-      stateLog.push(previousLog);
-      console.log(stateLog);
+        state: state
+    };
+    // add log entry to stateLog
+
+    stateLog.push(previousLog);
+    console.log(stateLog);
 
     // check if current question is 0 then not to display prev button or last question so not to show next button
-    
+
     const next = document.getElementById('next-question');
     const previous = document.getElementById('previous-question');
     const questionsArr = state.questions;
 
     next.style.display = checkLast(questionIndex, questionsArr);
     previous.style.display = checkFirst(questionIndex, questionsArr);
-    
+
 }
