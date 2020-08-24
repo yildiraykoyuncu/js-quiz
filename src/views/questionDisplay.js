@@ -46,7 +46,8 @@ const questionDisplay = (obj) => {
 
     <button id="next-question" class="btn">Next</button>
     <button id="previous-question" class="btn">Previous</button><br>
-    <button id="cheat-answer" class="btn">Cheat</button><br>
+    <button id="cheat-answer" class="btn">Cheat</button>
+    <button id="resources-btn" class="btn">Resources</button>
     
 
     </div>
