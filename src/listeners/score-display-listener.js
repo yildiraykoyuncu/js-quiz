@@ -1,0 +1,1 @@
+document.getElementById('interface').addEventListener('click', scoreDisplayHandler)

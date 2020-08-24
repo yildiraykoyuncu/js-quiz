@@ -3,10 +3,10 @@
 console.log('--- loading handler: next-question-handler');
 
 const nextQuestionHandler = (event) => {
-    debugger;
-    
+
+
     if (event.target.id !== 'next-question') return;
-    
+
     //update current question index
     state.game.currentQuestion++;
 
@@ -30,6 +30,6 @@ const nextQuestionHandler = (event) => {
     next.style.display = checkLast(questionIndex, questionsArr);
     previous.style.display = checkFirst(questionIndex, questionsArr);
 
-    
+
 
 }
