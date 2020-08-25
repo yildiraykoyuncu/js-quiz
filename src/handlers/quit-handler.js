@@ -11,10 +11,12 @@ const quitHandler = (event) => {
     //Create HTML
 
     const view = quitMessageDisplay(game);
-        //Render HTML to DOM
+    //Render HTML to DOM
 
     document.getElementById('interface').innerHTML = view;
     document.getElementById('interface').classList.add('container');
+
+
 };
 
 

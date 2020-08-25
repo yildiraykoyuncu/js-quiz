@@ -5,7 +5,7 @@
 
 */
 
-const state = {
+let state = {
     game: {
         //index of question currently displayed
         currentQuestion: 0,
