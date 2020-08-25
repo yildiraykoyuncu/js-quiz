@@ -1,14 +1,12 @@
 const resourcesDisplay = (obj) => {
-    
-    const links = obj.resourceLink.map(link => {
-        return`<a href="${link}">${link}</a><br>`
+
+    const links = obj.resourceLink.map(source => {
+        return `<a href="${source.url}" target="_blank">${source.name}</a><br>`
     }).join("")
     return `<div id="study-resources">
 
-    <p>The study resources: <span>${links}</span></p>
-    
+    <h3>For more info checkout these links:</h3>
+    <p><span>${links}</span></p>
     </div>
-    `    
-    };
-
-    
+    `
+};

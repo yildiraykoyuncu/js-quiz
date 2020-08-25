@@ -18,7 +18,35 @@ const nextQuestionHandler = (event) => {
     const html = questionDisplay(question)
         //Render HTML to DOM
 
-    document.getElementById('interface').innerHTML = html
+    const main = document.getElementById('interface');
+    main.innerHTML = html;
+
+    //remove the green or red border if the question is not already answered
+    if (!question.isAnswered) {
+        main.style.border = "1px solid black";
+    } else {
+        const result = document.querySelector('h2#result')
+        const main = document.querySelector('main')
+        if (question.selected === question.correct) {
+            result.innerHTML = `Correct!`;
+            result.className = 'correct';
+            main.style.border = '3px solid green';
+        } else {
+            result.innerHTML = `False!`;
+            result.className = 'false';
+            main.style.border = '3px solid red';
+        }
+    }
+
+    //remove the cheat window if its open
+
+    document.getElementById('cheat-display').innerHTML = '';
+    document.getElementById('cheat-display').classList.remove('container');
+
+    //remove resource window if its open
+
+    document.getElementById('resourceSt-display').innerHTML = '';
+    document.getElementById('resourceSt-display').classList.remove('container');
 
     //create new object to be added to stateLog
     const nextLog = {

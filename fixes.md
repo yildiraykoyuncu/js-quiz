@@ -2,3 +2,12 @@
 - fixed questionDisplay function to be able to render question with different number of answers
 - changed the question layout and button colors
 - updated score display function and added data a new property named isAnswered to prevent user increase his score by keep pressing confirm button.
+- updated scoreDisplayHandler to prevent score to be displayed or updated in case user do not chose an answer
+- green or red border should be removed when moved to the next question
+- if user returns to a previous question he should be able so see if he answered correct or not
+- tracks questions if they are answered or not, if yes user will see if their answer is correct or not
+- when user clicks restart at quit page state object is reset
+- when user clicks quit sees how many questions he answered and how many of them are correct
+- when user jumps to the next or previous questions or quit closes the cheat or resources windows if open 
+- fixed the layout of study links
+- added code to finish quiz when all the questions are answered 
