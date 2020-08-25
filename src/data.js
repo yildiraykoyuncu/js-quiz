@@ -44,7 +44,7 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof', 'https://alligator.io/js/typeof/'],
             isAnswered: false
         },
         {
@@ -56,7 +56,7 @@ const state = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script', 'https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup'],
             isAnswered: false
         },
         {
@@ -68,7 +68,7 @@ const state = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions', 'https://www.tutorialsteacher.com/javascript/javascript-function'],
             isAnswered: false
         },
         {
@@ -81,7 +81,7 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else', 'https://www.tutorialspoint.com/javascript/javascript_ifelse.htm'],
             isAnswered: false
         },
         {
@@ -94,7 +94,7 @@ const state = {
             ],
             correct: 3,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array', 'https://javascript.info/array'],
             isAnswered: false
         },
         {
@@ -107,7 +107,7 @@ const state = {
             ],
             correct: 3,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round', 'https://www.geeksforgeeks.org/javascript-math-round-function-2/'],
             isAnswered: false
         },
         {
@@ -118,7 +118,7 @@ const state = {
             ],
             correct: 0,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'https://www.tutorialspoint.com/What-is-the-difference-between-Java-and-JavaScript'],
             isAnswered: false
         },
         {
@@ -131,7 +131,7 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event', 'https://www.freecodecamp.org/news/javascript-onclick-event-explained/'],
             isAnswered: false
         },
         {
@@ -144,7 +144,7 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: ['https://ui.dev/var-let-const/', 'https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e'],
             isAnswered: false
         }
     ]
