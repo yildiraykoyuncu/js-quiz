@@ -29,4 +29,10 @@ const scoreDisplayHandler = (event) => {
     const score = document.getElementById('scoreDisplay');
     score.innerHTML = `Score: ${state.game.correct}`
     console.log(state.game.correct)
+
+    //If quiz is finished go to the quit page
+    if (state.game.answered === 10) {
+        quitHandler({ target: document.getElementById('quit') });
+    }
+
 }
