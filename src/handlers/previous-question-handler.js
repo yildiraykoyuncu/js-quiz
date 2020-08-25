@@ -58,4 +58,14 @@ const previousQuestionHandler = (event) => {
             main.style.border = '3px solid red';
         }
     }
+
+    //remove the cheat window if its open
+
+    document.getElementById('cheat-display').innerHTML = '';
+    document.getElementById('cheat-display').classList.remove('container');
+
+    //remove resource window if its open
+
+    document.getElementById('resourceSt-display').innerHTML = '';
+    document.getElementById('resourceSt-display').classList.remove('container');
 }
