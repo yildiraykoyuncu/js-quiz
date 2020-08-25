@@ -42,4 +42,17 @@ const previousQuestionHandler = (event) => {
     next.style.display = checkLast(questionIndex, questionsArr);
     previous.style.display = checkFirst(questionIndex, questionsArr);
 
+    //check if the question already answered if so show if its correct or not
+
+    const result = document.querySelector('h2#result')
+    const main = document.querySelector('main')
+    if (question.selected === question.correct) {
+        result.innerHTML = `Correct!`;
+        result.className = 'correct';
+        main.style.border = '3px solid green';
+    } else {
+        result.innerHTML = `False!`;
+        result.className = 'false';
+        main.style.border = '3px solid red';
+    }
 }
