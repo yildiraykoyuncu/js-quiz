@@ -31,7 +31,8 @@ const state = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'What does `typeof` do?',
@@ -43,7 +44,8 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'Where is the correct place to insert a JavaScript?',
@@ -54,7 +56,8 @@ const state = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'How do you create a function in JavaScript?',
@@ -65,7 +68,8 @@ const state = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'How to write an IF statement in JavaScript?',
@@ -77,6 +81,8 @@ const state = {
             ],
             correct: 1,
             selected: -1,
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'What is the correct way to write a JavaScript array?',
@@ -88,7 +94,8 @@ const state = {
             ],
             correct: 3,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'How do you round the number 7.25, to the nearest integer?',
@@ -100,7 +107,8 @@ const state = {
             ],
             correct: 3,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'JavaScript is the same as Java?',
@@ -110,7 +118,8 @@ const state = {
             ],
             correct: 0,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'Which event occurs when the user clicks on an HTML element?',
@@ -122,7 +131,8 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         },
         {
             text: 'How do you declare a JavaScript variable?',
@@ -134,7 +144,8 @@ const state = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types']
+            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            isAnswered: false
         }
     ]
 };
