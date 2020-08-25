@@ -6,6 +6,10 @@ const scoreDisplayHandler = (event) => {
     const currentQuestionIndex = state.game.currentQuestion;
     const question = state.questions[currentQuestionIndex];
 
+    //don't display or update score if user don't chose answer
+    const userInput = document.querySelector('input[name="answer"]:checked')
+    if (userInput === null) return;
+
     //check if the question is already answered
     if (question.isAnswered) return
 

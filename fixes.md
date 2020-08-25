@@ -2,3 +2,4 @@
 - fixed questionDisplay function to be able to render question with different number of answers
 - changed the question layout and button colors
 - updated score display function and added data a new property named isAnswered to prevent user increase his score by keep pressing confirm button.
+- updated scoreDisplayHandler to prevent score to be displayed or updated in case user do not chose an answer
