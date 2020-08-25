@@ -3,3 +3,4 @@
 - changed the question layout and button colors
 - updated score display function and added data a new property named isAnswered to prevent user increase his score by keep pressing confirm button.
 - updated scoreDisplayHandler to prevent score to be displayed or updated in case user do not chose an answer
+- green or red border should be removed when moved to the next question

@@ -18,7 +18,12 @@ const nextQuestionHandler = (event) => {
     const html = questionDisplay(question)
         //Render HTML to DOM
 
-    document.getElementById('interface').innerHTML = html
+    const main = document.getElementById('interface');
+    main.innerHTML = html;
+
+    //remove the green or red border
+
+    main.style.border = "1px solid black";
 
     //create new object to be added to stateLog
     const nextLog = {
