@@ -1,2 +1,3 @@
 - fixed the error when no answer is selected
 - fixed questionDisplay function to be able to render question with different number of answers
+- changed the question layout and buton colors

@@ -24,28 +24,30 @@ const questionDisplay = (obj) => {
 
     const answers = obj.answers.map((answer, i) => {
         return `<input type="radio" name="answer" value="${i}" id="answer_${i}">
-        <label for="answer_${i}">${obj.answers[i]}</label><br>`
+        <label for="answer_${i}">${answer}</label><br>`
     }).join('')
 
     return `<div class="content-container">
-    <p>${obj.text}<p>
+    <p class="question-body">${obj.text}<p>
     ${answers}
+
+      <div class="content-container">
+        <button id="quit" class="btn">Quit</button>
+        <button id="cheat-answer" class="btn">Cheat</button>
+        <button id="confirm" class="btn">Confirm!</button>
+      </div>
+
     </div>
 
     <div id="interaction" class="interaction">
 
-    <h2 id="result"></h2>
-    <button id="confirm" class="btn">Confirm!</button>
-
-
-
-    <button id="quit" class="btn">Quit</button>
-
-    <button id="next-question" class="btn">Next</button>
-    <button id="previous-question" class="btn">Previous</button><br>
-    <button id="cheat-answer" class="btn">Cheat</button>
-    <button id="resources-btn" class="btn">Resources</button>
+      <h2 id="result"></h2>
     
+      <div class="interaction-panel">
+        <button id="next-question" class="btn">Next</button>
+        <button id="previous-question" class="btn">Previous</button><br>
+        <button id="resources-btn" class="btn">Resources</button>
+      </div>
 
     </div>
     

@@ -22,6 +22,14 @@ body {
     transition: all ease-in-out 0.3s;
 }
 
+p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+/* question body */
+
 .content-container {
     flex: 3;
 }
@@ -31,30 +39,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+div.interaction-panel {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 65%;
 }
 
 .btn {
-    margin-top: auto;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
     width: 100px;
     height: 30px;
     color: white;
-    background-color: rgb(20, 200, 100);
+    background-color: rgb(14, 22, 139);
 }
 
 button#start {
-    background-color: rgb(20, 200, 100);
+    background-color: rgb(10, 138, 27);
 }
 
 button#confirm {
-    background-color: rgb(20, 200, 100);
+    background-color: rgb(10, 138, 27);
 }
 
-p {
-    font-size: 17px;
-    line-height: 25px;
+button#quit {
+    background-color: rgb(235, 34, 34);
+}
+
+button#cheat-answer {
+    background-color: rgb(219, 152, 7);
+}
+
+p.question-body {
+    font-weight: 800;
+    font-size: 20px;
 }
 
 
@@ -72,16 +95,16 @@ h2.false {
     margin-bottom: auto;
     color: red;
 }
-section#cheat-display{
+
+section#cheat-display {
     display: flex;
-justify-content: center;   
-align-items: center;
-
+    justify-content: center;
+    align-items: center;
 }
+
 div#cheat {
-display: flex;
-justify-content: center;   
-align-items: center;
-color: green; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
 }
-
