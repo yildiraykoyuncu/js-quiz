@@ -4,7 +4,12 @@ const answerHandler = (event) => {
 
 
     //read from user input
-    const userAnswer = Number(document.querySelector('input[name="answer"]:checked').value);
+    const userInput = document.querySelector('input[name="answer"]:checked')
+
+    if (userInput === null) return;
+
+    const userAnswer = Number(userInput.value);
+
 
     //read from state
     const questionIndex = state.game.currentQuestion
@@ -24,12 +29,12 @@ const answerHandler = (event) => {
         action: 'confirm',
         event: event,
         input: question.answers[question.selected],
-        state:state
-        };
-      // add log entry to stateLog
-      //  it will be updated by reference!
-      stateLog.push(answerLog);
-      console.log(stateLog);
+        state: state
+    };
+    // add log entry to stateLog
+    //  it will be updated by reference!
+    stateLog.push(answerLog);
+    console.log(stateLog);
 
     //check if answer is correct or not and display to user
 

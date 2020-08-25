@@ -1,0 +1,4 @@
+- fixed the error when no answer is selected
+- fixed questionDisplay function to be able to render question with different number of answers
+- changed the question layout and button colors
+- updated score display function and added data a new property named isAnswered to prevent user increase his score by keep pressing confirm button.
