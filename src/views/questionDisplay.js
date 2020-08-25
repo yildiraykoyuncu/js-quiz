@@ -22,17 +22,14 @@ const expect = chai.expect;
  */
 const questionDisplay = (obj) => {
 
+    const answers = obj.answers.map((answer, i) => {
+        return `<input type="radio" name="answer" value="${i}" id="answer_${i}">
+        <label for="answer_${i}">${obj.answers[i]}</label><br>`
+    }).join('')
+
     return `<div class="content-container">
     <p>${obj.text}<p>
-
-    <input type="radio" name="answer" value="0" id="answer_0">
-    <label for="answer_0">${obj.answers[0]}</label><br>
-
-    <input type="radio" name="answer" value="1" id="answer_1">
-    <label for="answer_0">${obj.answers[1]}</label><br>
-
-    <input type="radio" name="answer" value="2" id="answer_2">
-    <label for="answer_0">${obj.answers[2]}</label>
+    ${answers}
     </div>
 
     <div id="interaction" class="interaction">
