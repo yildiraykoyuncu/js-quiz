@@ -22,6 +22,9 @@ const scoreDisplayHandler = (event) => {
     //mark the question as answered
     question.isAnswered = true;
 
+    //increase the number of answered questions
+    state.game.answered++;
+
     // display it to user
     const score = document.getElementById('scoreDisplay');
     score.innerHTML = `Score: ${state.game.correct}`

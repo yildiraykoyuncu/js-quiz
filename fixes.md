@@ -6,4 +6,5 @@
 - green or red border should be removed when moved to the next question
 - if user returns to a previous question he should be able so see if he answered correct or not
 - tracks questions if they are answered or not, if yes user will see if their answer is correct or not
-- when user clicks restart at quit page state object is reseted
+- when user clicks restart at quit page state object is reset
+- when user clicks quit sees how many questions he answered and how many of them are correct

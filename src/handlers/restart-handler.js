@@ -17,10 +17,12 @@ const restartHandler = (event) => {
     //Create HTML
     const html = questionDisplay(question)
 
-    //Render HTML to DOM
 
-    document.getElementById('interface').innerHTML = html
-    document.getElementById('interface').classList.add('container')
+    //Render HTML to DOM
+    const main = document.getElementById('interface')
+    main.innerHTML = html
+    main.classList.add('container')
+    main.style.border = "1px solid black";
 
     // check if current question is 0 then not to display prev button or last question so not to show next button
 
