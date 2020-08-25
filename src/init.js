@@ -29,6 +29,8 @@ const initialState = {
         showCorrectAnswers: false,
         // the questions in the quiz
     },
+
+
     questions: [{
             text: 'What are the different ways to declare a JS variable?',
             answers: [
@@ -38,7 +40,7 @@ const initialState = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var', 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types'],
+            resourceLink: [{ name: 'MDN Var Statement', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var' }, { name: 'MDN Declaring Types', url: 'https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_types' }],
             isAnswered: false
         },
         {
@@ -51,7 +53,7 @@ const initialState = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof', 'https://alligator.io/js/typeof/'],
+            resourceLink: [{ name: 'MDN typeof', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof' }, { name: 'alligator.io typeof', url: 'https://alligator.io/js/typeof/' }],
             isAnswered: false
         },
         {
@@ -63,7 +65,7 @@ const initialState = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script', 'https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup'],
+            resourceLink: [{ name: 'MDN Script tag', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script' }, { name: 'stackoverflow', url: 'https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup' }],
             isAnswered: false
         },
         {
@@ -75,7 +77,7 @@ const initialState = {
             ],
             correct: 2,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions', 'https://www.tutorialsteacher.com/javascript/javascript-function'],
+            resourceLink: [{ name: 'MDN functions', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions' }, { name: 'tutorialsteacher', url: 'https://www.tutorialsteacher.com/javascript/javascript-function' }],
             isAnswered: false
         },
         {
@@ -88,7 +90,7 @@ const initialState = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else', 'https://www.tutorialspoint.com/javascript/javascript_ifelse.htm'],
+            resourceLink: [{ name: 'MDN if statements', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else' }, { name: 'tutorialspoint', url: 'https://www.tutorialspoint.com/javascript/javascript_ifelse.htm' }],
             isAnswered: false
         },
         {
@@ -101,7 +103,7 @@ const initialState = {
             ],
             correct: 3,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array', 'https://javascript.info/array'],
+            resourceLink: [{ name: 'MDN arrays', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array' }, { name: 'javascriptinfo arrays', url: 'https://javascript.info/array' }],
             isAnswered: false
         },
         {
@@ -114,7 +116,7 @@ const initialState = {
             ],
             correct: 3,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round', 'https://www.geeksforgeeks.org/javascript-math-round-function-2/'],
+            resourceLink: [{ name: 'MDN Math.round', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round' }, { name: 'geeksforgeeks', url: 'https://www.geeksforgeeks.org/javascript-math-round-function-2/' }],
             isAnswered: false
         },
         {
@@ -125,7 +127,7 @@ const initialState = {
             ],
             correct: 0,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'https://www.tutorialspoint.com/What-is-the-difference-between-Java-and-JavaScript'],
+            resourceLink: [{ name: 'MDN javascript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' }, { name: 'tutorialspoint', url: 'https://www.tutorialspoint.com/What-is-the-difference-between-Java-and-JavaScript' }],
             isAnswered: false
         },
         {
@@ -138,7 +140,7 @@ const initialState = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event', 'https://www.freecodecamp.org/news/javascript-onclick-event-explained/'],
+            resourceLink: [{ name: 'MDN event', url: 'https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event' }, { name: 'freecodecamp', url: 'https://www.freecodecamp.org/news/javascript-onclick-event-explained/' }],
             isAnswered: false
         },
         {
@@ -151,7 +153,7 @@ const initialState = {
             ],
             correct: 1,
             selected: -1,
-            resourceLink: ['https://ui.dev/var-let-const/', 'https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e'],
+            resourceLink: [{ name: 'ui.dev: const, var, let', url: 'https://ui.dev/var-let-const/' }, { name: 'dev.to: const, let, war differences', url: 'https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e' }],
             isAnswered: false
         }
     ]

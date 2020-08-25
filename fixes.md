@@ -9,3 +9,4 @@
 - when user clicks restart at quit page state object is reset
 - when user clicks quit sees how many questions he answered and how many of them are correct
 - when user jumps to the next or previous questions or quit closes the cheat or resources windows if open 
+- fixed the layout of study links
