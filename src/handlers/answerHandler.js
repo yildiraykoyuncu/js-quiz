@@ -33,8 +33,8 @@ const answerHandler = (event) => {
     // };
     // add log entry to stateLog
     //  it will be updated by reference!
-    stateLog.push(answerLog);
-    console.log(stateLog);
+    // stateLog.push(answerLog);
+    // console.log(stateLog);
 
     //check if answer is correct or not and display to user
 

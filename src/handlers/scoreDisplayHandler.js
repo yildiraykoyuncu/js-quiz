@@ -28,7 +28,7 @@ const scoreDisplayHandler = (event) => {
     // display it to user
     const score = document.getElementById('scoreDisplay');
     score.innerHTML = `Score: ${state.game.correct}`
-    console.log(state.game.correct)
+
 
     //create new object to be added to stateLog
     const scoreLog = {
