@@ -123,8 +123,12 @@ div.progress-container {
 }
 
 div.box {
-    height: 20px;
+    height: 25px;
     width: 30px;
-    border: 1px solid black;
+    border-radius: 5px;
     flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
