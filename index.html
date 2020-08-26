@@ -24,7 +24,7 @@
     <script src="./src/logic/check-first-last-question.js"></script>
     <script src="./src/views/cheatDisplay.js"></script>
     <script src="./src/views/study-resources.js"></script>
-
+    <script src="./src/views/progress-bar-display.js"></script>
 
     <!-- load handlers -->
 
@@ -33,9 +33,6 @@
     <script src="./src/handlers/cheat-handler.js"></script>
     <script src="./src/handlers/study-resources-handler.js"></script>
 
-
-
-
     <script src="./src/handlers/next-question-handler.js"></script>
     <script src="./src/handlers/previous-question-handler.js"></script>
 
@@ -43,6 +40,7 @@
     <script src="./src/handlers/restart-handler.js"></script>
 
     <script src="./src/handlers/scoreDisplayHandler.js"></script>
+    <script src="./src/handlers/progress-handlers.js"></script>
 
 </head>
 
@@ -66,10 +64,11 @@
             <button id="start" class="btn">Start Quiz</button>
         </div>
 
-     
+
 
     </section>
     <!-- this is where magic happens -->
+    <section id="progress-bar"></section>
     <main id="interface">
 
     </main>
@@ -91,6 +90,7 @@
 
     <script src="./src/listeners/quit-listener.js"></script>
     <script src="./src/listeners/restart-listener.js"></script>
+    <script src="./src/listeners/progress-listener.js"></script>
     <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
     <script src='./lib/review-buttons.js'></script>
