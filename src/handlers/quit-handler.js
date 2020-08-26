@@ -25,6 +25,20 @@ const quitHandler = (event) => {
 
     document.getElementById('resourceSt-display').innerHTML = '';
     document.getElementById('resourceSt-display').classList.remove('container');
+
+    //create new object to be added to stateLog
+    const quitLog = {
+        action: 'quit',
+        event: event,
+        correctAnswers: state.game.correct,
+        numberOfAnswers: state.game.answered,
+        state: deepClone(state)
+    };
+    // add log entry to stateLog
+
+    stateLog.push(quitLog);
+    console.log(stateLog);
+
 };
 
 

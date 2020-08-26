@@ -30,6 +30,21 @@ const scoreDisplayHandler = (event) => {
     score.innerHTML = `Score: ${state.game.correct}`
     console.log(state.game.correct)
 
+    //create new object to be added to stateLog
+    const scoreLog = {
+        action: 'scoreDisplay',
+        event: event,
+        correctAnswer: question.correct,
+        userAnswer: question.selected,
+        correctAnswers: state.game.correct,
+        numberOfAnswers: state.game.answered,
+        questionStatus: question.isAnswered,
+        state: deepClone(state)
+    };
+
+    stateLog.push(scoreLog);
+    console.log(stateLog);
+
     //If quiz is finished go to the quit page
     if (state.game.answered === 10) {
         quitHandler({ target: document.getElementById('quit') });

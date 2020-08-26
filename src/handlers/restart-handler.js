@@ -33,7 +33,16 @@ const restartHandler = (event) => {
     next.style.display = checkLast(questionIndex, questionsArr);
     previous.style.display = checkFirst(questionIndex, questionsArr);
 
+    //create new object to be added to stateLog
+    const restartLog = {
+        action: 'restart',
+        event: event,
+        state: deepClone(state)
+    };
+    // add log entry to stateLog
 
+    stateLog.push(restartLog);
+    console.log(stateLog);
 
 
 };

@@ -29,7 +29,7 @@ const answerHandler = (event) => {
         action: 'confirm',
         event: event,
         input: question.answers[question.selected],
-        state: state
+        state: deepClone(state)
     };
     // add log entry to stateLog
     //  it will be updated by reference!

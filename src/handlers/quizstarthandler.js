@@ -27,9 +27,9 @@ const quizStartHandler = (event) => {
 
     //create new object to be added to stateLog
     const startLog = {
-      action: 'start',
-      event: event,
-      state:state
+        action: 'start',
+        event: event,
+        state: deepClone(state)
     };
     // add log entry to stateLog
     //  it will be updated by reference!
