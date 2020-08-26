@@ -15,8 +15,8 @@ const quitHandler = (event) => {
 
     document.getElementById('interface').innerHTML = view;
     document.getElementById('interface').classList.add('container');
-
-    //remove the cheat window if its open
+    document.getElementById('interface').style.border = '1px solid black'
+        //remove the cheat window if its open
 
     document.getElementById('cheat-display').innerHTML = '';
     document.getElementById('cheat-display').classList.remove('container');
