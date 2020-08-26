@@ -25,12 +25,12 @@ const answerHandler = (event) => {
     question.selected = userAnswer;
 
     //create new object to be added to stateLog
-    const answerLog = {
-        action: 'confirm',
-        event: event,
-        input: question.answers[question.selected],
-        state: deepClone(state)
-    };
+    // const answerLog = {
+    //     action: 'confirm',
+    //     event: event,
+    //     input: question.answers[question.selected],
+    //     state: deepClone(state)
+    // };
     // add log entry to stateLog
     //  it will be updated by reference!
     stateLog.push(answerLog);

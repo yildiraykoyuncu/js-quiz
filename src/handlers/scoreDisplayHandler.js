@@ -32,8 +32,9 @@ const scoreDisplayHandler = (event) => {
 
     //create new object to be added to stateLog
     const scoreLog = {
-        action: 'scoreDisplay',
+        action: 'confirm',
         event: event,
+        input: question.answers[question.selected],
         correctAnswer: question.correct,
         userAnswer: question.selected,
         correctAnswers: state.game.correct,
