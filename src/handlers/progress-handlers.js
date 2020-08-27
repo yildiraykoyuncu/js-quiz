@@ -3,7 +3,21 @@ const progressBarStarter = (event) => {
     const html = progressBarRenderer()
     document.getElementById('progress-bar').innerHTML = html
     document.getElementById('progress-bar').className = 'container'
+
+    //Progress bar current question
+    const questionIndex = state.game.currentQuestion;
+    const boxes = document.querySelectorAll('.box ')
+
+    boxes.forEach((box, i) => {
+        if (i === questionIndex) {
+            box.style.border = '3px solid black'
+        } else {
+            box.style.border = 'none'
+        }
+    })
 }
+
+
 
 const progressBarHandler = (event) => {
 

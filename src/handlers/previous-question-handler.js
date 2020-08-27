@@ -14,6 +14,19 @@ const previousQuestionHandler = (event) => {
     const questionIndex = state.game.currentQuestion;
     const question = state.questions[questionIndex];
 
+    // progress bar current question
+
+    const boxes = document.querySelectorAll('.box ');
+
+    boxes.forEach((box, i) => {
+        if (i === questionIndex) {
+            box.style.border = '3px solid black'
+        } else {
+            box.style.border = 'none'
+        }
+    });
+
+
     //Create HTML
 
     const html = questionDisplay(question)
