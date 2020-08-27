@@ -24,9 +24,9 @@ const previousQuestionHandler = (event) => {
     //create new object to be added to stateLog
     const previousLog = {
         action: 'previous',
-        event: event.type,
-        'current question': questionIndex,
-        state: state
+        event: event,
+        currentQuestion: questionIndex,
+        state: deepClone(state)
     };
     // add log entry to stateLog
 

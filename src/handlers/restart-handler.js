@@ -8,7 +8,8 @@ const restartHandler = (event) => {
     if (event.target.id !== 'restart') return;
     console.log('reset works fine');
     //reset all the values in state object in data script
-    state = initialState
+    //state = initialState
+    reset(state);
 
     // read from data
     const questionIndex = state.game.currentQuestion;
@@ -24,6 +25,9 @@ const restartHandler = (event) => {
     main.classList.add('container')
     main.style.border = "1px solid black";
 
+    //Reset the score
+    document.getElementById('scoreDisplay').innerHTML = "";
+
     // check if current question is 0 then not to display prev button or last question so not to show next button
 
     const next = document.getElementById('next-question');
@@ -33,7 +37,16 @@ const restartHandler = (event) => {
     next.style.display = checkLast(questionIndex, questionsArr);
     previous.style.display = checkFirst(questionIndex, questionsArr);
 
+    //create new object to be added to stateLog
+    const restartLog = {
+        action: 'restart',
+        event: event,
+        state: deepClone(state)
+    };
+    // add log entry to stateLog
 
+    stateLog.push(restartLog);
+    console.log(stateLog);
 
 
 };
@@ -46,6 +59,7 @@ const reset = (obj) => {
 
         for (let i = 0; i < obj.questions.length; i++) {
             obj.questions[i].selected = -1;
+            obj.questions[i].isAnswered = false;
         }
 
     }

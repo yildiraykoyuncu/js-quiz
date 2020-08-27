@@ -15,8 +15,8 @@ const quitHandler = (event) => {
 
     document.getElementById('interface').innerHTML = view;
     document.getElementById('interface').classList.add('container');
-
-    //remove the cheat window if its open
+    document.getElementById('interface').style.border = '1px solid black'
+        //remove the cheat window if its open
 
     document.getElementById('cheat-display').innerHTML = '';
     document.getElementById('cheat-display').classList.remove('container');
@@ -25,6 +25,20 @@ const quitHandler = (event) => {
 
     document.getElementById('resourceSt-display').innerHTML = '';
     document.getElementById('resourceSt-display').classList.remove('container');
+
+    //create new object to be added to stateLog
+    const quitLog = {
+        action: 'quit',
+        event: event,
+        correctAnswers: state.game.correct,
+        numberOfAnswers: state.game.answered,
+        state: deepClone(state)
+    };
+    // add log entry to stateLog
+
+    stateLog.push(quitLog);
+    console.log(stateLog);
+
 };
 
 
