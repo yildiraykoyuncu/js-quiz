@@ -8,6 +8,8 @@ const quizStartHandler = (event) => {
     const questionIndex = state.game.currentQuestion;
     const question = state.questions[questionIndex];
 
+
+
     //Create HTML
 
     const html = questionDisplay(question)

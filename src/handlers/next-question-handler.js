@@ -13,6 +13,18 @@ const nextQuestionHandler = (event) => {
     const questionIndex = state.game.currentQuestion;
     const question = state.questions[questionIndex];
 
+    //Progress bar current question
+
+    const boxes = document.querySelectorAll('.box ')
+        //document.getElementById(`question${questionIndex}`).style.border = '3px solid black'
+    boxes.forEach((box, i) => {
+        if (i === questionIndex) {
+            box.style.border = '3px solid black'
+        } else {
+            box.style.border = 'none'
+        }
+    })
+
     //Create HTML
 
     const html = questionDisplay(question)
