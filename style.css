@@ -108,3 +108,27 @@ div#cheat {
     align-items: center;
     color: green;
 }
+
+
+/* progress bar */
+
+section#progress-bar {
+    display: flex;
+    justify-content: center;
+}
+
+div.progress-container {
+    display: flex;
+    width: 100%;
+}
+
+div.box {
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

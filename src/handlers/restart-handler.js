@@ -25,8 +25,13 @@ const restartHandler = (event) => {
     main.classList.add('container')
     main.style.border = "1px solid black";
 
+    //resets progress bar
+
+    progressBarStarter({ target: document.getElementById('start') })
+
     //Reset the score
     document.getElementById('scoreDisplay').innerHTML = "";
+
 
     // check if current question is 0 then not to display prev button or last question so not to show next button
 
